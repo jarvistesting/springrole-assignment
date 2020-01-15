@@ -1,0 +1,7 @@
+{
+    "plugins": [
+        [ "inline-react-svg" ],
+        ["inline-import-data-uri", { "extensions": [ ".html", ".jpg", ".svg" ] } ]
+    ]
+}
+

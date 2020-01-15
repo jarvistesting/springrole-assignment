@@ -1,0 +1,39 @@
+{
+    "connect": [
+        {
+            "text": "About Us",
+            "link": "https://springrole.com/pages/about-us"
+        },
+        {
+            "text": "Careers",
+            "link": "http://springrole.springrecruit.com/"
+        },
+        {
+            "text": "Contact Us",
+            "link": "https://springrole.com/pages/about-us"
+        }
+    ],
+    "explore": [
+        {
+            "text": "Spring Token",
+            "link": "https://springrole.com/pages/spring-token"
+        },
+        {
+            "text": "Blog",
+            "link": "https://blog.springrole.com/?gi=ba55e4275810"
+        },
+        {
+            "text": "FAQ",
+            "link": "https://springrole.freshdesk.com/support/solutions/folders/43000341674"
+        }
+    ],
+    "address": {
+        "email": "communications@springrole.com",
+        "addressValue": "No.19, 2nd Floor Amar Plaza, Krishnanagar Industrial Layout Hosur Rd, Bengaluru, Karnataka 560029"
+    },
+    "termcondition": [
+        {"text": "Terms & conditions", "link": "https://springrole.com/SpringRole-Terms-of-Service.pdf"},
+        {"text": "Privacy policy", "link": "https://www.iubenda.com/privacy-policy/94068001"},
+        {"text": "© SpringRole 2020", "link": "https://springrole.com/company/springrole"}
+    ]
+}
