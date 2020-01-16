@@ -33,14 +33,14 @@ const EndorseExp = () => {
                                     </div>
                                     <Divider orientation="vertical" />
 
-                                    <div class="experience-bars-ctr">
-                                        <div class="bars-ctr">
-                                            <div class="experience-txt">11+<span>yrs</span></div>
-                                            <div class="grid-bar grid-bar-1"></div>
-                                            <div class="grid-bar grid-bar-2"></div>
-                                            <div class="grid-bar grid-bar-3"></div>
+                                    <div className="experience-bars-ctr">
+                                        <div className="bars-ctr">
+                                            <div className="experience-txt">11+<span>yrs</span></div>
+                                            <div className="grid-bar grid-bar-1"></div>
+                                            <div className="grid-bar grid-bar-2"></div>
+                                            <div className="grid-bar grid-bar-3"></div>
                                         </div>
-                                        <div class="experience-text">Experience</div>
+                                        <div className="experience-text">Experience</div>
                                     </div>
                                     <Divider orientation="vertical" />
 

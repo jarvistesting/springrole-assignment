@@ -8,6 +8,7 @@ import Skills from '../components/Skills';
 import UserProfile from '../components/UserProfile';
 import ProtocolHeading from '../components/ProtocolHeading';
 import WorkExperience from '../components/WorkExperience';
+import LogoutBanner from '../components/LogoutBanner';
 import Github from './Github';
 import EndorseExp from './EndorseExp';
 
@@ -16,6 +17,7 @@ const BodyContainer = () => {
     return (
         <div className="body-container">
             <Container>
+                <LogoutBanner />
                 <UserContextProvider>
                     <UserProfile />
                     <EndorseExp />

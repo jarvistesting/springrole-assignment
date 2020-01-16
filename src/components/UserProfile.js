@@ -5,6 +5,7 @@ import {isEmpty} from 'lodash';
 import {userContext} from '../context/userContext';
 import ButtonWhite from './ButtonWhite';
 import { ReactComponent as MessageIcon } from '../images/message_icon.svg';
+import { ReactComponent as VerifiedProfile } from '../images/verified_profile.svg';
 
 const UserProfile = () => {
     const {userData} = useContext(userContext);
@@ -23,7 +24,14 @@ const UserProfile = () => {
                             <Grid item xs={12} lg={10} md={9} className="detail-container">
                                 <Box className="info-ctr">
                                     <div className="info-left-section">
-                                        <p className="user-name">{userData.user_details.name}</p>
+                                        <div className="name-ctr">
+                                            <p className="user-name">{userData.user_details.name}</p> 
+                                            <div className="tooltip-icon">
+                                                <div className="completed-icon-ctr ctr-drawn">
+                                                    <VerifiedProfile />
+                                                </div>
+                                            </div>
+                                        </div>
                                         <p className="user-designation">{userData.user_details.current_job_designation} at {userData.user_details.current_company}</p>
                                         <p className="user-location">{userData.user_details.current_location}</p>
                                     </div>
@@ -39,7 +47,7 @@ const UserProfile = () => {
                                         {
                                             userData.skills.map((item, index) => {
                                                 return (
-                                                    <Grid item xs={12} sm={3} lg={2} md={3} className="skill-widget-grid-ctr">
+                                                    <Grid item xs={12} sm={3} lg={2} md={3} className="skill-widget-grid-ctr" key={`user_skill_${item.skill_name}_${index}`}>
                                                         <div className="skill-widget-ctr">
                                                             <div>{item.skill_name}</div>
                                                             <div className="click-ctr click-ctr-5"></div>

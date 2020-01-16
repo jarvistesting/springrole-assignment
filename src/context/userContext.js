@@ -18,7 +18,6 @@ class UserContextProvider extends Component {
     }
 
     render() {
-        console.log("render", this.state.userData);
         return(
             <userContext.Provider value={{...this.state}}>
                 {this.props.children}

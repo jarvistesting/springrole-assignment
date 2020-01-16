@@ -18,7 +18,6 @@ class GithubContextProvider extends Component {
     }
 
     render() {
-        console.log("render", this.state.githubData);
         return(
             <githubContext.Provider value={{...this.state}}>
                 {this.props.children}

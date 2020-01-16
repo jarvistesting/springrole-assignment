@@ -34,7 +34,7 @@ const Footer = () => {
                         {
                             FooterLink.termcondition.map((item, index) => {
                                 return (
-                                    <React.Fragment>
+                                    <React.Fragment key={`term_condition_${index}`}>
                                         <a className={index !== FooterLink.termcondition.length -1 ? "term-condition-text-border" : "term-condition-text"} target="_blank" href={item.link}>
                                             {item.text}
                                         </a>

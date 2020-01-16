@@ -634,3 +634,47 @@ code {
   height: 100%;
   width: 10px
 }
+
+.description-txt {
+  font-size: 8px;
+  color: #959595;
+  width: 100px;
+  padding: 0 0 0 8px;
+  margin: 0;
+}
+
+.verification-desc {
+  font-size: 8px;
+  color: #959595;
+}
+.verification-ctr {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.work-done {
+  max-width: 450px;
+  padding: 10px 0;
+  word-break: break-all;
+  line-height: 15px;
+}
+
+.name-ctr {
+  display: flex;
+  align-items: center;
+}
+
+.tooltip-icon {
+  cursor: pointer;
+}
+
+.completed-icon-ctr, .ctr-drawn {
+  background-color: #0fc41e;
+  height: 18px;
+  margin-left: 5px;
+  width: 18px;
+  border-radius: 50%;
+  transition: all 0.5s;
+  transition-delay: 1.5s;
+}

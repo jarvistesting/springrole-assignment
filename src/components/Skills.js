@@ -30,11 +30,10 @@ const getEndorsedValue = (endorsedArr = []) => {
 }
 
 const getAvatar = (endorsedArr = [], classes) => {
-
     return (
         endorsedArr.map((item, index) => {
             return (
-                <Avatar alt="" src={item.avatar_url} className={classes.small} />
+                <Avatar alt="" src={item.avatar_url} className={classes.small} key={`avatart_url_${item.avatar_url}`} />
             )
         })
     )
@@ -53,7 +52,7 @@ const Skills = () => {
                         {
                             userData && userData.skills.length  ? (
                                 userData.skills.map((item, index) => (
-                                    <React.Fragment key={`skills_detail_${index}`}>
+                                    <React.Fragment key={`skills_detail_${item.skill_name}_${index}`}>
                                         <Box className="skills-box-content-container">
                                             <h3 className="education-content-heading">{item.skill_name}</h3>
                                             <div className="meter-ctr">
@@ -67,7 +66,6 @@ const Skills = () => {
                                             <Box className="skills-avatar-container">
                                                 <AvatarGroup>
                                                     {getAvatar(item.endorsed_by.users, classes)}
-                                                    
                                                 </AvatarGroup>
                                                 <h3 className="skills-content-description"> 
                                                     Endorsed by {getEndorsedValue(item.endorsed_by.users)}

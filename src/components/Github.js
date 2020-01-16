@@ -12,7 +12,6 @@ import { ReactComponent as Language } from '../images/language.svg';
 
 const Github = () => {
     const {githubData} = useContext(githubContext);
-    console.log("githubdata", githubData, Followers);
     
     return (
         !isEmpty(githubData) ? (
